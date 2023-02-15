@@ -129,6 +129,7 @@ while True:
 
 	if check_log == 'success':
 		if cache == 'old':
+        /*
 			while True:
 				print(option_acc)
 				try:
@@ -141,7 +142,8 @@ while True:
 				except:
 					os.system('clear')
 					print(Colors.red + f"Lỗi lựa chọn!! Chỉ nhập 1 hoặc 2\n")
-			
+		*/	
+            choice=1;
 			os.system('clear')
 			if choice == 1:
 				break
@@ -160,7 +162,8 @@ while True:
 if check_log == 'success':
 	#Nhập user tiktok
 	while True:
-		id_tiktok = Write.Input("Nhập ID tiktok chạy (lấy ở mục cấu hình web):", Colors.green_to_yellow, interval=0.0025)
+		//id_tiktok = Write.Input("Nhập ID tiktok chạy (lấy ở mục cấu hình web):", Colors.green_to_yellow, interval=0.0025)
+        id_tiktok = "thcba001"
 		for _ in range(3):
 			check_log = check_tiktok(id_tiktok,token_tds)
 			if check_log == 'success' or check_log == 'error_token':
@@ -177,7 +180,8 @@ if check_log == 'success':
 			os.system('clear')
 			print(Colors.red + f"Lỗi sever vui lòng nhập lại!\n")
 
-	#Lựa chọn nhiệm vụ		
+	#Lựa chọn nhiệm vụ	
+/*	
 	while True:
 		print(option)
 		try:
@@ -216,9 +220,10 @@ if check_log == 'success':
 		except:
 			os.system('clear')
 			print(Colors.red + f"Vui lòng nhập một số > 9\n")
-
+*/
 	os.system('clear')
-
+    choise=1
+    delay=6
 	if choice == 1:
 		type_load = 'tiktok_follow'
 		type_duyet = 'TIKTOK_FOLLOW_CACHE'
@@ -254,16 +259,13 @@ if check_log == 'success':
 						a = duyet_job(type_nhan, token_tds, api_type)
 
 
-				if dem_tong == max_job:
-					break
+
 				else:
 					for i in range(delay,-1,-1):
 						print(Colors.green + 'Vui lòng đợi: '+str(i)+' giây',end=('\r'))
 						sleep(1)
 
-		if dem_tong == max_job:
-			print(f'{Colors.green}Hoàn thành {max_job} nhiệm vụ!')
-			break
+
 
 
 
