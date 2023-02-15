@@ -129,20 +129,8 @@ while True:
 
 	if check_log == 'success':
 		if cache == 'old':
-        /*
-			while True:
-				print(option_acc)
-				try:
-					choice = int(Write.Input("Lựa chọn của bạn là (Ví dụ: sử dụng acc cũ nhập 1):", Colors.green_to_yellow, interval=0.0025))
-					if choice in [1,2]:
-						break
-					else:
-						os.system('clear')
-						print(Colors.red + f"Lỗi lựa chọn!! Chỉ nhập 1 hoặc 2\n")
-				except:
-					os.system('clear')
-					print(Colors.red + f"Lỗi lựa chọn!! Chỉ nhập 1 hoặc 2\n")
-		*/	
+        
+
             choice=1;
 			os.system('clear')
 			if choice == 1:
@@ -181,46 +169,7 @@ if check_log == 'success':
 			print(Colors.red + f"Lỗi sever vui lòng nhập lại!\n")
 
 	#Lựa chọn nhiệm vụ	
-/*	
-	while True:
-		print(option)
-		try:
-			choice = int(Write.Input("Lựa chọn nhiệm vụ muốn làm (Ví dụ: Follow nhập 1):", Colors.green_to_yellow, interval=0.0025))
-			if choice in [1,2]:
-				break
-			else:
-				os.system('clear')
-				print(Colors.red + f"Lỗi lựa chọn!! Chỉ nhập 1 hoặc 2\n")
-		except:
-			os.system('clear')
-			print(Colors.red + f"Lỗi lựa chọn!! Chỉ nhập 1 hoặc 2\n")
 
-	#Nhập delay nhiệm vụ
-	while True:
-		try:
-			delay = int(Write.Input("Thời gian delay giữa các job (giây):", Colors.green_to_yellow, interval=0.0025))
-			if delay > 1:
-				break
-			else:
-				os.system('clear')
-				print(Colors.red + f"Delay tối thiểu là 3\n")
-		except:
-			os.system('clear')
-			print(Colors.red + f"Vui lòng nhập một số > 2\n")
-
-	#Nhập max nhiệm vụ
-	while True:
-		try:
-			max_job = int(Write.Input("Dừng lại khi làm được số nhiệm vụ là:", Colors.green_to_yellow, interval=0.0025))
-			if max_job > 9:
-				break
-			else:
-				os.system('clear')
-				print(Colors.red + f"Tối thiểu là 10\n")
-		except:
-			os.system('clear')
-			print(Colors.red + f"Vui lòng nhập một số > 9\n")
-*/
 	os.system('clear')
     choise=1
     delay=6
